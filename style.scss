@@ -1,0 +1,224 @@
+---
+---
+* {
+	vertical-align: middle;
+}
+
+@font-face{
+	font-family: "OCR A";
+	src: url("/ocraext.ttf");
+}
+body{ font-family:"OCR A", serif; }
+
+.header {
+	display: inline-block;
+//	border: 1px solid #03EA60;
+	text-align: center;
+	padding: 0 1em;
+}
+.header-logo-img {
+	width: 75%; max-width: 30em; height: auto;
+
+	display: block;
+	margin: 0 auto;
+}
+.container {
+	display: inline !important;
+}
+
+
+.symbol-library {
+  position: absolute;
+  width: 0;
+  height: 0;
+  
+  overflow: hidden;
+  box-shadow: none;
+}
+
+.head {
+  fill: var(--skin-color, #fc4);
+  
+  &__mouth {
+    stroke: var(--mouth-color, red);
+  }  
+}
+
+.shoe {
+  &__left, &__right {
+    fill: var(--shoe-color, #000);
+  }
+}
+
+.skirt {
+  &--edgy {
+    fill: var(--skirt--edgy-color, none);
+  }
+
+  &--round {
+    fill: var(--skirt--round-color, none);
+  }
+}
+
+.arm {
+  &--left, &--right {
+    fill: var(--skin-color, #fc4);
+  }
+}
+
+.hair {
+  &--red {
+    --hair-color: #f30;
+  }
+  
+  &--light-blonde {
+    --hair-color: #fb2;
+  }
+  
+  &--blonde {
+    --hair-color: #a60;
+  }
+  
+  &--brown {
+    --hair-color: #820;
+  }
+  
+  &--black {
+    --hair-color: #000;
+  }
+  
+  &--pink {
+    --hair-color: #f7f;
+  }
+  
+  &--green {
+    --hair-color: #7f7;
+  }
+  
+  &--blue {
+    --hair-color: #77f;
+  }
+  
+  &--emo {
+    --hair-emo-color: var(--hair--color, #000);
+  }
+  
+  &--punk {
+    --hair-punk-color: var(--hair-color, #000);
+  }
+  
+  &--bob {
+    --hair-bob-color: var(--hair-color, #000);
+  }
+  
+  &--long {
+    --hair-emo-color: var(--hair-color, #000);
+    --hair-back--long-color: var(--hair-color, #000);
+  }
+  
+  &--medium {
+    --hair-emo-color: var(--hair-color, #000);
+    --hair-back--medium-color: var(--hair-color, #000);
+  }
+  
+  &--short {
+    --hair-emo-color: var(--hair-color, #000);
+    --hair-back--short-color: var(--hair-color, #000);
+  }
+  
+  &__front {
+    &--emo {
+      fill: var(--hair-emo-color, none);
+    }
+
+    &--punk {
+      fill: var(--hair-punk-color, none);
+    }
+
+    &--bob {
+      fill: var(--hair-bob-color, none);
+    }    
+  }
+  
+  &__back {
+    &--short {
+      fill: var(--hair-back--short-color, none);
+    }
+
+    &--medium {
+      fill: var(--hair-back--medium-color, none);
+    }
+
+    &--long {
+      fill: var(--hair-back--long-color, none);
+    }
+  }
+}
+
+.torso {
+  fill: var(--torso-color, #000);
+}
+
+.legs {
+  fill: var(--legs-color, #07f);
+}
+
+.person {
+  width: 112px;
+  height: 256px;
+  
+  * {
+  fill: none;
+  }
+}
+
+.tone {
+  &--1 {
+    --skin-color: #a65;
+  }
+  
+  &--2 {
+    --skin-color: #b76;
+  }
+  
+  &--3 {
+    --skin-color: #c97;
+  }
+  
+  &--4 {
+    --skin-color: #da9;
+  }
+  
+  &--5 {
+    --skin-color: #fcb;
+  }
+}
+
+.dress {
+  --legs-color: var(--skin-color, #fc4);  
+  
+  &--round {
+    --skirt--round-color: var(--torso-color, #000);
+  }
+  
+  &--edgy {
+    --skirt--edgy-color: var(--torso-color, #000);
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Hide scrollbars in windows */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox (not sure if that works) */
+}

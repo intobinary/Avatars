@@ -1,0 +1,93 @@
+---
+---
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<title>The People</title>
+		<!--
+		<link rel="stylesheet" href="reset.css" />
+		-->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	
+	<body>
+		<header class="header">
+			<figure class="header-logo">
+				<img src="intobinary.png" class="header-logo-img" />
+			</figure>
+			
+			<div>
+				<p>We've doodled people! <br />Choose your avatar, screenshot and use anywhere!</p>
+			</div>
+		</header>
+	
+	<svg viewBox="0 0 7 16" class="symbol-library">
+  <symbol id="shoeLeft" viewBox="0 0 2 1" width="2" height="1">
+    <path class="shoe__left" d="M0 1 q 0 -1 1 -1 l1 0 l 0 1Z"/>
+  </symbol>
+  <symbol id="shoeRight" viewBox="0 0 2 1" width="2" height="1">
+    <path class="shoe__right" d="M0 1 l 2 0 q 0 -1 -1 -1 l -1 0 Z" />
+  </symbol>
+  <symbol id="legs" viewBox="0 0 3 5" width="3" height="5">
+    <path class="legs" d="M 0 0 l3 0 l0 5 l -1 0 l 0 -4 l-1 0 l0 4 l-1 0"/>
+  </symbol>
+  <symbol id="torso" viewBox="0 0 3 5" width="3" height="5">
+    <path class="torso" d="M 0 0 l3 0 l0 5 l-3 0 z"/>
+  </symbol>
+  <symbol id="head" viewBox="-2 0 6 5" width="6" height="5">
+    <g class="head">
+    <circle cx="1.5" cy="2.2" r="1.52"/>
+    <path d="M1 3 l 1 0 l 0 1 q 0 .5 -.5 .5 q-.5 0 -.5 -.5 l 0 -1z" />
+    <circle cx="1" cy="2" r=".25" fill="#000" />
+    <circle cx="1.05" cy="1.95" r=".1" fill="#fff" />
+    <circle cx="2" cy="2" r=".25" fill="#000" />
+    <circle cx="2.05" cy="1.95" r=".1" fill="#fff" />
+    <path d="M1.25 2.5 q0 .3 .3 .3 q .3 0 .3 -.3" stroke-width=".1" stroke-linecap="round" class="head__mouth" fill="none"/>
+    </g>
+  </symbol>
+  <symbol id="armLeft" viewBox="0 0 2 5" width="2" height="5">
+    <path class="arm--left" d="M2 0 l-.2 0 q-1 0 -1 1 l 0 3 q0 .5 .5 .5 q .5 0 .5 -.5 l0 -3 l.2 0"/>
+  </symbol>
+  <symbol id="armRight" viewBox="0 0 2 5" width="2" height="5">
+    <path class="arm--right" d="M0 0 l.2 0 q 1 0 1 1 l 0 3 q0 .5 -.5 .5 q -.5 0 -.5 -.5 l0 -3 l-.2 0"/>
+  </symbol>
+  <symbol id="hair" viewbox="0 0 6 6" width="6" height="6">
+    <path class="hair__front--emo" d="M 3 1.2 q 1.5 0 1.5 1.5 q-1 0 -1 -.8 q 0 .8 -2 .8 q0 -1.5 1.5 -1.5" />
+    <path class="hair__front--punk" d="M2.5 1.6 l.5 -1.2 l.5 1.2 l-.5 .5 l-.5 -.5z" />
+    <path class="hair__front--bob" d="M1.5 3 q-1 0 -1 -1 q 0 -1 1 -1 q0 -1 1 -1 l1 0 q1 0 1 1 q1 0 1 1 q0 1 -1 1 q -.5 0 -.5 -1 q0 .2 -1 .2 q-1 0 -1 -.2 q0 1 -.5 1"/>
+  </symbol>
+  <symbol id="hair_back" viewBox="0 0 6 6" width="6" height="6">
+    <path class="hair__back--short" d="M1.5 2.75 l 0 1.7 q.5 0 .5 -.5 l0 .5q.5 0 .5 -.5 l0 .5q.5 0 .5 -.5 l0 .5q.5 0 .5 -.5 l0 .5q.5 0 .5 -.5 l0 .5q.5 0 .5 -.5 l0 .5 l0 -1.7z" />
+    <path class="hair__back--medium" d="M1.5 2.75 l 0 2 q.5 0 .5 -.5 l0 .5q.5 0 .5 -.5 l0 .5q.5 0 .5 -.5 l0 .5q.5 0 .5 -.5 l0 .5q.5 0 .5 -.5 l0 .5q.5 0 .5 -.5 l0 .5 l0 -2z" />
+    <path class="hair__back--long" d="M1.5 2.75 l0 3 q.5 0 .5 -.5 l0 .5 q.5 0 .5 -.5 l0 -.5l1 0 l 0 1 q.5 0 .5 -.5l0 .5q.5 0 .5 -.5l0 .5l 0 -3z" />
+  </symbol>
+  <symbol id="skirt" viewBox="0 0 7 4" width="7" height="4">
+    <path class="skirt--edgy" d="M 2 0 l 3 0 l 1 3 l -5 0 l 1 -3 z" />
+    <path class="skirt--round" d="M 2 0 l 3 0 q 1 0 1 3 q0 .5 -.5 .5 q-.5 0 -.5 -.5q0 .5 -.5 .5 q-.5 0 -.5 -.5q0 .5 -.5 .5 q-.5 0 -.5 -.5q0 .5 -.5 .5 q-.5 0 -.5 -.5q0 .5 -.5 .5 q-.5 0 -.5 -.5 q 0 -3 1 -3 z" />
+  </symbol>
+
+
+  <symbol id="person" viewBox="0 0 7 16" width="7" height="16">
+    <use class="person__arm--left" xlink:href="#armLeft" x="0.05" y="5" width="2" height="5"/>
+    <use class="person__arm--right" xlink:href="#armRight" x="4.95" y="5" width="2" height="5"/>
+    <use class="person__legs" xlink:href="#legs" x="2" y="9.9" width="3" height="5"/>
+    <use class="person__shoe--left" xlink:href="#shoeLeft" x="1" y="14.8" width="2" height="1"/>
+    <use class="person__shoe--right" xlink:href="#shoeRight" x="4" y="14.8" width="2" height="1"/>
+    <use class="person__torso" xlink:href="#torso" x="2" y="5" width="3" height="5"/>
+    <use class="person__hair--back" xlink:href="#hair_back" x=".5" y=".2" width="6" height="6" />
+    <use class="person__head" xlink:href="#head" x="0" y="1" width="6" height="5"/>
+    <use class="person__hair" xlink:href="#hair" x=".5" y=".2" width="6" height="6" />
+    <use class="person__skirt" xlink:href="#skirt" x="0" y="9.5" width="7" height="4" />
+  </symbol>
+</svg>
+
+<div class="container"></div>
+	
+		<script src="d3.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
